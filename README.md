@@ -1,13 +1,2 @@
 # bpcreakom.github.io
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>RTM Test Page</title>
-    <!-- HIER dein D365 Web Tracking Script einfügen -->
-</head>
-<body>
-    <h1>RTM Tracking Test</h1>
-    <p>Diese Seite dient zum Testen des Website Trackings.</p>
-</body>
-</html>

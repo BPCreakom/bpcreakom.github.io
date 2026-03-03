@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <title>RTM Tracking Test</title>
 
-    <!-- D365 RTM Tracking Script hier einfügen -->
+        <script>
+                (function (a, t, i) { var e = "MSCI"; var s = "Analytics"; var o = e + "queue"; a[o] = a[o] || []; var r = a[e] || function (n) { var t = {}; t[s] = {}; function e(e) { while (e.length) { var r = e.pop(); t[s][r] = function (e) { return function () { a[o].push([e, n, arguments]) } }(r) } } var r = "track"; var i = "set"; e([r + "Event", r + "View", r + "Action", i + "Config", i + "Property", i + "User", "initialize", "teardown"]); return t }(i.name); var n = i.name; if (!a[e]) { a[n] = r[s]; a[o].push(["new", n]); setTimeout(function () { var e = "script"; var r = t.createElement(e); r.async = 1; r.src = i.src; var n = t.getElementsByTagName(e)[0]; n.parentNode.insertBefore(r, n) }, 1) } else { a[n] = new r[s] } if (i.user) { a[n].setUser(i.user) } if (i.props) { for (var c in i.props) { a[n].setProperty(c, i.props[c]) } } a[n].initialize(i.cfg) })(window, document, {
+
+                    src: "https://cxppeur1rdrect01sa02cdn-endpoint.azureedge.net/webtracking/WebTracking/WebTracking.bundle.js",
+                    name: "MSCI",
+                    cfg: {
+
+                        ingestionKey: "c211efa4f9e6483090d7fb83f8c9ce8b-e09c8491-bd22-445b-84d5-03fa4ad0c060-7584",
+                        endpointUrl: "https://mobile.events.data.microsoft.com/OneCollector/1.0/",
+                        autoCapture: {
+                            view: true,
+                            click: true
+                        },
+                        orgInfo: {
+                            orgId: "a0ec329a-29dc-f011-872b-000d3ab60077",
+                            orgTenantId: "5da84185-0c38-43c3-8a25-60acb3473e3a",
+                            orgGeo: "EUR"
+                        }
+                    }
+                });
+        </script>
 
 </head>
 <body>
